@@ -1,0 +1,98 @@
+:root {
+  --bg-color-breakfast: #FDF8E4;  /* Soft, sunny, eggshell tone */
+  --bg-color-lunch: #ECF7EC;      /* Light, fresh green tint */
+  --bg-color-dinner: #F1F0FF;     /* Pale lavender for evening vibes */
+  --bg-color-dessert: #FFF0F4;    /* Gentle pink for sweet treats */
+  --navbar-bg-color: #1F2937; 
+  --navbar-text-color: #FFFFFF;
+  --bg-color-allrecipes: #FAFAFA;
+  --text-color: #2A2A2A; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", serif;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  padding: 10px;
+  background-color: var(--navbar-bg-color);
+  color: var(--navbar-text-color);
+}
+
+.nav-text{
+  width: 30%;
+  margin-left: 40px;
+}
+
+.nav-links{
+ width: 70%;
+ display: flex;
+ justify-content: end;
+ gap: 10px;
+ margin-right: 40px;
+}
+
+.nav-links button{
+  background-color: var(--navbar-bg-color);
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--navbar-text-color);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-links button:hover{
+  background-color: #374151;
+}
+
+/* Container */
+
+.container{
+  margin-left: 80px;
+  margin-right: 80px;
+  padding-top: 20px;
+  color: var(--text-color);
+  min-height: 90vh;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Home */
+
+.home{
+  background-color: var(--bg-color-allrecipes);
+}
+
+/* Breakfast */
+
+.breakfast{
+  background-color: var(--bg-color-breakfast);
+}
+
+/* Lunch */
+
+.lunch{
+  background-color: var(--bg-color-lunch);
+}
+
+/* Dinner */
+
+.dinner{
+  background-color: var(--bg-color-dinner);
+}
+
+/* Dessert */
+
+.dessert{
+  background-color: var(--bg-color-dessert);
+}
